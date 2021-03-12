@@ -12,14 +12,15 @@ namespace SalesWebMVC.Controllers {
             return View();
         }
 
-        public IActionResult About() {
-            ViewData["Message"] = "Your application description page.";
+        public IActionResult Sobre() {
+            ViewData["Message"] = "Descrição sobre essa empresa.";
+            ViewData["Dev"] = "Aquiles Maior";
 
             return View();
         }
 
-        public IActionResult Contact() {
-            ViewData["Message"] = "Your contact page.";
+        public IActionResult Contato() {
+            ViewData["Message"] = "Página de Contatos.";
 
             return View();
         }
