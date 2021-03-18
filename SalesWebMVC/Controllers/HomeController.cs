@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModels;
 
 namespace SalesWebMVC.Controllers {
     public class HomeController : Controller {
@@ -15,6 +15,11 @@ namespace SalesWebMVC.Controllers {
         public IActionResult Sobre() {
             ViewData["Message"] = "Descrição sobre essa empresa.";
             ViewData["Dev"] = "Aquiles Maior";
+
+            return View();
+        }
+
+        public IActionResult Departamentos() {
 
             return View();
         }
